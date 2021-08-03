@@ -3,16 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <title>Athazagoraphobia</title>
-    <body style="background-color:rgb(130, 158, 172);"></body>
+    <body style="background-color:rgb(59, 68, 94);"></body>
     <!DOCTYPE html>
     <html lang="en-us">
       <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <meta charset="UTF-8">
         <title>Events!</title>
       </head>
+      <style>
+        body {
+      background-image: url('https://cdn.wallpapersafari.com/73/71/wJjv8y.jpg');
+    }
+* {
+  font-family: Georgia, Times, 'Times New Roman', serif !important
+}
+    </style>
+
       <body>
-        <h1>Please press the keys A through Z. Let's walk down memory lane.</h1>
-        <progress id="health" value="100" max="100"></progress>
+        <br>
+        <center><h1><span class="badge badge-info"><em>Athazagoraphobia</em></span></h1></center>
+        <center><h5><span class="badge badge-dark"><em>The fear of forgetting</em></span></h5></center>
+        <br>
+        <br>
+        <br>
+        <center><h3><span class="badge badge-dark">Please press the keys A through Z to start the game.</span></h3></center>
+        <center><h3><span class="badge badge-dark">It is encouraged to choose keys at random.</span></h3></center>
+        <center><h3><span class="badge badge-dark">Let's take a walk down memory lane.</span></h3></center>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <center><progress id="health" value="100" max="100"></progress></center>
+        <hr>
         <script type="text/javascript">
         // register a onkeyup event on the document obj.   // document.onkeyup 
         document.onkeyup = function(event){
