@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Athazagoraphobia</title>
-    <body style="background-color:rgb(59, 68, 94);"></body>
     <!DOCTYPE html>
     <html lang="en-us">
       <head>
@@ -13,17 +12,14 @@
       </head>
       <style>
         body {
-      background-image: url('https://cdn.wallpapersafari.com/73/71/wJjv8y.jpg');
+      background-image: url('');
     }
 * {
   font-family: Georgia, Times, 'Times New Roman', serif !important
-  
 }
     </style>
-
       <body>
         <div class="alert alert-info" role="alert">
-               
           </div>
         <br>
         <center><h1><span class="badge badge-info"><em>Athazagoraphobia</em></span></h1></center>
@@ -39,13 +35,20 @@
         <br>
         <br>
         <br>
-        <hr>
+        <br>
         <center><progress id="health" value="100" max="100"></progress></center>
-        <hr>
+        <center><h3><span class="badge badge-light">Sanity</span></h3></center>
+        <center><h3 style="color:rgba(137, 186, 214, 0.87);"><strong>Hint</strong>: Press the Z key.</h3></center>
+        <br>
         <script type="text/javascript">
+        document.body.style.backgroundColor = "#8ab8f0";
         // register a onkeyup event on the document obj.   // document.onkeyup 
-        document.onkeyup = function(event){
-        // inside funciton
+        
+        
+
+document.onkeyup = function(event){
+           
+        // Inside function
             // var keyPressed = event.key 
             var keyPressed = event.key;
             let health = document.getElementById("health")
@@ -179,6 +182,71 @@
             function KeyPressCheck(event){
                 console.log('pressed::'+ event.keyCode);
 }
+
+if( health.value == 100) {
+    document.body.style.backgroundColor = "#91c2f7";
+}
+if( health.value == 95) {
+    document.body.style.backgroundColor = "#8ab8f0";
+}
+if( health.value == 90) {
+    document.body.style.backgroundColor = "#82ade8";
+}
+if( health.value == 85) {
+    document.body.style.backgroundColor = "#7aa3e0";
+}
+if( health.value == 80) {
+    document.body.style.backgroundColor = "#7399d9";
+}
+if( health.value == 75) {
+    document.body.style.backgroundColor = "#6b8fd1";
+}
+if( health.value == 70) {
+    document.body.style.backgroundColor = "#6385c9";
+}
+if( health.value == 65) {
+    document.body.style.backgroundColor = "#5c7ac2";
+}
+if( health.value == 60) {
+    document.body.style.backgroundColor = "#5470ba";
+}
+if( health.value == 55) {
+    document.body.style.backgroundColor = "#4c66b2";
+}
+if( health.value == 50) {
+    document.body.style.backgroundColor = "#455cab";
+}
+if( health.value == 45) {
+    document.body.style.backgroundColor = "#3d52a3";
+}
+if( health.value == 40) {
+    document.body.style.backgroundColor = "#36479c";
+}
+if( health.value == 35) {
+    document.body.style.backgroundColor = "#2e3d94";
+}
+if( health.value == 30) {
+    document.body.style.backgroundColor = "#26338c";
+}
+if( health.value == 25) {
+    document.body.style.backgroundColor = "#1f2985";
+}
+if( health.value == 20) {
+    document.body.style.backgroundColor = "#171f7d";
+}
+if( health.value == 15) {
+    document.body.style.backgroundColor = "#0f1475";
+}
+if( health.value == 10) {
+    document.body.style.backgroundColor = "#080a6e";
+}
+if( health.value == 5) {
+    document.body.style.backgroundColor = "#000066";
+}
+if( health.value == 0) {
+    document.body.style.backgroundColor = "#000000";
+    alert("[[[\n\n\nYour recorded activity in the past 15 minutes is unsatisfactory. Better luck next time.\n\n\n]]]")
+}
                 // when true 
                 // keep count ... count = 0 ; count = count +1
                 // alert ( "you pressed "+ KeyPressed)
@@ -186,7 +254,6 @@
                 // alert (wrong try again)
         };
         </script>
-      
     <!-- javascript -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
