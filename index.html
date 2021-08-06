@@ -41,7 +41,7 @@
         <center><h3 style="color:rgba(137, 186, 214, 0.87);"><strong>Hint</strong>: Press the Z key.</h3></center>
         <br>
         <script type="text/javascript">
-        document.body.style.backgroundColor = "#8ab8f0";
+        document.body.style.backgroundColor = "#91c2f7";
         // register a onkeyup event on the document obj.   // document.onkeyup 
         
         
@@ -53,7 +53,6 @@ document.onkeyup = function(event){
             var keyPressed = event.key;
             let health = document.getElementById("health")
             var badKey  = ["a", "c", "e", "f", "k", "l", "n", "o", "p", "s", "t", "x", "y"]
-            var goodKey = ["b", "d", "g", "h", "i", "j", "m", "q", "r", "u", "v", "w", "z"]
             // console.log (keyPressed)
             console.log(keyPressed);
             //if keypressed was A or if keypressed was B or if keyPressed c ... d
@@ -172,7 +171,7 @@ document.onkeyup = function(event){
             }else {
             } // 
             if( keyPressed == "z") {
-              alert("You chose Z.\n\nDon't let your awareness hit zero.");
+              alert("You chose Z.\n\nDon't let your sanity hit zero.");
             }else {
             } // good
             if (badKey){
@@ -245,8 +244,16 @@ if( health.value == 5) {
 }
 if( health.value == 0) {
     document.body.style.backgroundColor = "#000000";
-    alert("[[[\n\n\nYour recorded activity in the past 15 minutes is unsatisfactory. Better luck next time.\n\n\n]]]")
+    alert("Your recorded activity in the past 15 minutes is unsatisfactory. Better luck next time.")
 }
+var goodKey = ["b" || "d" || "g" || "h" || "i" || "j" || "m" || "q" || "r" || "u" || "v" || "w" || "z"]
+            
+            if ((health.value == 10 || health.value == 20 || health.value == 30 || health.value == 40 || health.value == 50 || health.value == 60 || health.value == 70 || health.value == 80 || health.value == 90 || health.value == 100) && keyPressed === "b" && keyPressed === "d" && keyPressed === "g" && keyPressed === "h" && keyPressed === "i" && keyPressed === "j" && keyPressed === "m" && keyPressed === "q" && keyPressed === "r" && keyPressed === "u" && keyPressed === "v"&& keyPressed === "w" && keyPressed === "z"){
+            alert("PLS")
+            }
+            else{
+            }
+
                 // when true 
                 // keep count ... count = 0 ; count = count +1
                 // alert ( "you pressed "+ KeyPressed)
